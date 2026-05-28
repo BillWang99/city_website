@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Urban Portfolio</title>
+    <style>
+        /* 現代都市風設計變數 */
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo { font-weight: bold; font-size: 1.5rem; letter-spacing: 2px; }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .hero h1 { font-size: 4rem; margin-bottom: 1rem; }
+        .hero p { color: var(--accent-color); font-size: 1.2rem; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+
+        .section-title { margin-bottom: 2rem; text-align: center; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        footer { text-align: center; padding: 4rem; font-size: 0.9rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">URBAN.STUDIO</div>
+        <nav>Menu</nav>
+    </header>
+
+    <section class="hero">
+        <h1>Building Future.</h1>
+        <p>探索都市美學與數位創新的交匯點</p>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">我們的服務</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>品牌設計</h3>
+                <p>打造極簡且具備深度的都市品牌形象。</p>
+            </div>
+            <div class="card">
+                <h3>數位開發</h3>
+                <p>響應式網站與現代化應用程式解決方案。</p>
+            </div>
+            <div class="card">
+                <h3>空間規劃</h3>
+                <p>從數位視角延伸至實體空間的設計邏輯。</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 URBAN STUDIO. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
